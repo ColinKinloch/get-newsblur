@@ -126,6 +126,7 @@ fn main() {
         std::io::stdout().flush().unwrap();
         let mut username = String::new();
         std::io::stdin().read_line(&mut username).unwrap();
+        username.pop();
         username
     };
     
